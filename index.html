@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Medmart</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Include Style -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-white border-bottom fixed-top py-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.svg" alt="Medmart Logo" />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <img src="assets/img/hamburger_icon.svg" alt="Hamburger" />
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-center flex-grow-1 mb-lg-0 mb-4 pe-3 gap-4"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Collections
+                  </a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a class="dropdown-item border-bottom" href="#">Medications</a></li>
+                    <li>
+                      <a class="dropdown-item border-bottom" href="#">Stethoscopes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item border-bottom" href="#">Thermometers</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Medical Supplies</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <ul class="d-flex gap-4 align-items-center list-unstyled m-0">
+                <li>
+                  <a href="#" class="nav_link" title="Search">
+                    <img src="assets/img/search.svg" alt="Search" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav_link" title="Profile">
+                    <img src="assets/img/person.svg" alt="Person" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav_link" title="Cart">
+                    <img src="assets/img/cart.svg" alt="Cart" />
+                    <span class="cart_count">03</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-bg">
+        <div class="container">
+          <div class="d-flex align-items-center text-center flex-column">
+            <p class="m-0 text-uppercase">Since 2014</p>
+            <div class="hero-text-large mb-3">
+              <div class="pills">
+                <img src="assets/img/medicinePills.svg" alt="Pills" />
+              </div>
+              <img
+                src="assets/img/hero_text.svg"
+                class="w-100"
+                alt="Hero Text Content"
+              />
+            </div>
+
+            <div class="d-flex flex-column flex-md-row gap-3">
+              <button
+                type="button"
+                title="Shop Essentials"
+                aria-label="Buttton Shop Essentials"
+                class="btn btn-primary"
+              >
+                Shop Essentials
+              </button>
+              <button
+                type="button"
+                title="About Medmart"
+                aria-label="Buttton About Medmart"
+                class="btn btn-outline-secondary"
+              >
+                About Medmart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="vaccine hero-bg-content">
+          <img src="assets/img/vaccine.svg" alt="Background Vaccine" />
+        </div>
+        <div class="mask hero-bg-content">
+          <img src="assets/img/mask.svg" alt="Background Mask" />
+        </div>
+        <div class="medicine hero-bg-content">
+          <img src="assets/img/medicine.svg" alt="Background Medicine" />
+        </div>
+      </section>
+      <!-- End: Hero Section -->
+
+      <!-- Services -->
+      <section class="services">
+        <div class="container-fluid p-0">
+          <div class="d-flex flex-column flex-sm-row services_wrapper">
+            <div class="py-lg-5 py-4 pe-lg-5 services_item padding_start">
+              <h3 class="services_title">99% Customer Satisfaction</h3>
+              <p class="m-0 services_desc">
+                Rated highly for quality & reliability
+              </p>
+            </div>
+            <div class="py-lg-5 py-4 px-lg-5 services_item flex-grow-1">
+              <h3 class="services_title">Next-Day Dispatch</h3>
+              <p class="m-0 services_desc">
+                Quick, dependable shipping across the UK
+              </p>
+            </div>
+            <div class="py-lg-5 py-4 ps-lg-5 services_item padding_end">
+              <h3 class="services_title">Safe & Certified</h3>
+              <p class="m-0 services_desc">
+                All products meet medical safety standards
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rating border-bottom">
+        <div
+          class="container-fluid px-0 py-4 gap-4 d-flex flex-column flex-sm-row align-items-center justify-content-between"
+        >
+          <div
+            class="d-flex flex-column flex-sm-row align-items-center gap-3 padding_start"
+          >
+            <img src="assets/img/chat.svg" alt="Chat Icon" />
+            <p class="m-0 rating_title text-center text-sm-start px-5 px-sm-0">
+              Trusted by Thousands of Health Professionals & Households
+            </p>
+          </div>
+
+          <div
+            class="d-flex align-items-center gap-lg-5 gap-3 padding_end px-sm-0 px-4"
+          >
+            <div>
+              <img src="assets/img/Trustpilot.svg" alt="Trustpilot" />
+            </div>
+            <div>
+              <img src="assets/img/googleReview.svg" alt="googleReview" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Services -->
+
+      <!-- Advertize -->
+      <section class="py-5">
+        <div class="container">
+          <div class="px-3">
+            <div class="row g-lg-4 g-3">
+              <div class="col-sm-4">
+                <div class="ad_wrapper">
+                  <div id="carousel" class="carousel slide h-100">
+                    <div class="carousel-indicators me-lg-4 me-3">
+                      <button
+                        type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner h-100">
+                      <div class="carousel-item slider1 active">
+                        <div
+                          class="carousel-content d-flex flex-column h-100 align-content-end justify-content-end"
+                        >
+                          <div class="text-end me-lg-4 me-3 mb-lg-4 mb-3 mt-5">
+                            <h5 class="text-primary fw-semibold mb-1 fs-4">
+                              Enjoy 50% OFF
+                            </h5>
+                            <p class="fs-4">Your First Order</p>
+                            <button
+                              type="button"
+                              title="SHOP NOW"
+                              class="btn btn-primary"
+                            >
+                              SHOP NOW
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item slider1">
+                        <div
+                          class="carousel-content d-flex flex-column h-100 align-content-end justify-content-end"
+                        >
+                          <div class="text-end me-lg-4 me-3 mb-lg-4 mb-3 mt-5">
+                            <h5 class="text-primary fw-semibold mb-1 fs-4">
+                              Enjoy 50% OFF
+                            </h5>
+                            <p class="fs-4">Your First Order</p>
+                            <button
+                              type="button"
+                              title="SHOP NOW"
+                              class="btn btn-primary"
+                            >
+                              SHOP NOW
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item slider1">
+                        <div
+                          class="carousel-content d-flex flex-column h-100 align-content-end justify-content-end"
+                        >
+                          <div class="text-end me-lg-4 me-3 mb-lg-4 mb-3 mt-5">
+                            <h5 class="text-primary fw-semibold mb-1 fs-4">
+                              Enjoy 50% OFF
+                            </h5>
+                            <p class="fs-4">Your First Order</p>
+                            <button
+                              type="button"
+                              title="SHOP NOW"
+                              class="btn btn-primary"
+                            >
+                              SHOP NOW
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="row g-lg-4 g-3">
+                  <div class="col-12">
+                    <div class="ad_wrapper stethoscopes_ad">
+                      <div class="ad_content">
+                        <h5 class="text-primary fw-semibold mb-1 fs-4">
+                          Save 30% On
+                        </h5>
+                        <p class="fs-3">Digital Electronic Stethoscopes</p>
+                        <a href="#" class="primary_link">visit store</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="ad_wrapper thermometer_ad">
+                      <div class="ad_content">
+                        <p class="fs-4">Get Digital<br />Thermometers</p>
+                        <a href="#" class="primary_link">visit store</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="ad_wrapper medicalSupplies_ad">
+                      <img
+                        src="assets/img/medicalSupplies.png"
+                        class="w-100 h-100"
+                        alt="Medical Supplies"
+                      />
+                      <div class="ad_content">
+                        <p class="fs-4 text-dark">
+                          Essential<br />Medical<br />Supplies
+                        </p>
+                        <a href="#" class="primary_link text-white">shop now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Advertize -->
+
+      <!-- Products -->
+      <section class="py-5">
+        <div class="container">
+          <div class="px-3">
+            <header class="text-center">
+              <h2 class="section_title mb-4">Medical & Wellness Products</h2>
+              <p class="ff-figtree title_desc">
+                Free Shipping on Orders Over $59 or with Your First Purchase
+              </p>
+            </header>
+
+            <div class="d-flex justify-content-center mt-5">
+              <ul class="nav nav-tabs mb-2" id="myTab">
+                <li class="nav-item">
+                  <button
+                    class="nav-link active"
+                    id="popularItem"
+                    data-bs-toggle="tab"
+                    data-bs-target="#popularItem-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="popularItem-pane"
+                    aria-selected="true"
+                  >
+                    Popular Items
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link"
+                    id="topRated"
+                    data-bs-toggle="tab"
+                    data-bs-target="#topRated-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="topRated-pane"
+                    aria-selected="false"
+                  >
+                    Top Rated
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link"
+                    id="trending"
+                    data-bs-toggle="tab"
+                    data-bs-target="#trending-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="trending-pane"
+                    aria-selected="false"
+                  >
+                    Trending Items
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content pt-4" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="popularItem-pane"
+                role="tabpanel"
+                aria-labelledby="popularItem"
+              >
+                <div class="row g-3">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product1.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Surgical Hand Gloves
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product2.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Clinical Stethoscope
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product3.jpg"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                        <span class="off-tag product_tag">20% off</span>
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Digital Thermometer
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product4.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Digital Thermometer
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product3.jpg"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                        <span class="off-tag product_tag">20% off</span>
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Digital Thermometer
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product6.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          First Medicine Aid Kit
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product7.jpg"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                        <span class="sale-tag product_tag">ON SALE</span>
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Pills Bottle
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product8.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Surgical Face Mask
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="topRated-pane"
+                role="tabpanel"
+                aria-labelledby="topRated"
+              >
+                <div class="row g-3">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product3.jpg"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                        <span class="off-tag product_tag">20% off</span>
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Digital Thermometer
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product6.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          First Medicine Aid Kit
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product7.jpg"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                        <span class="sale-tag product_tag">ON SALE</span>
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Pills Bottle
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product8.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Surgical Face Mask
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="trending-pane"
+                role="tabpanel"
+                aria-labelledby="trending"
+              >
+                <div class="row g-3">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product1.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Surgical Hand Gloves
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product2.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Clinical Stethoscope
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product3.jpg"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                        <span class="off-tag product_tag">20% off</span>
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Digital Thermometer
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a
+                      href="#"
+                      class="d-flex flex-column text-decoration-none product_wrapper"
+                    >
+                      <div class="product_img_wrapper">
+                        <img
+                          src="assets/img/product4.png"
+                          class="h-100 w-100"
+                          alt="Products"
+                        />
+                      </div>
+                      <div class="product_content_wrapper">
+                        <h5 class="product_title text-white fw-normal mb-1">
+                          Digital Thermometer
+                        </h5>
+                        <p
+                          class="product_price mb-0 text-primary ff-figtree fw-medium"
+                        >
+                          $49.50
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center mt-5">
+              <button type="button" class="btn btn-primary">VIEW MORE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Products -->
+
+      <!-- FAQ -->
+      <section class="py-5 border-bottom faq">
+        <div class="container">
+          <div class="px-3">
+            <header class="text-center">
+              <h2 class="section_title mb-4">Frequently Ask Questions</h2>
+            </header>
+
+            <div class="accordion row g-4 my-4" id="accordionExample">
+              <div class="col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      What payment methods do you accept?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quia eum alias cupiditate harum saepe. Provident adipisci
+                      voluptas exercitationem sed incidunt.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      How long does delivery take?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quia eum alias cupiditate harum saepe. Provident adipisci
+                      voluptas exercitationem sed incidunt.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Do you offer free shipping?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quia eum alias cupiditate harum saepe. Provident adipisci
+                      voluptas exercitationem sed incidunt.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Are your products certified?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quia eum alias cupiditate harum saepe. Provident adipisci
+                      voluptas exercitationem sed incidunt.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      What is your return policy?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quia eum alias cupiditate harum saepe. Provident adipisci
+                      voluptas exercitationem sed incidunt.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      How can I contact customer support?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quia eum alias cupiditate harum saepe. Provident adipisci
+                      voluptas exercitationem sed incidunt.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: FAQ -->
+
+      <!-- Features -->
+      <section class="py-5 features">
+        <div class="container">
+          <div class="px-3">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div
+                  class="feature_warpper h-100 pe-lg-4 d-flex align-items-center gap-4"
+                >
+                  <div class="feature_img flex-shrink-0">
+                    <img
+                      src="assets/img/feature_img_1.svg"
+                      alt="Feature Icon"
+                    />
+                  </div>
+                  <div class="feature_content">
+                    <h5 class="feature_title mb-md-3 mb-2 fw-semibold">Free Shipping</h5>
+                    <p class="feature_desc m-0 ff-figtree">
+                      Free Shipping on Orders Over $59 or with Your First
+                      Purchase
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="feature_warpper h-100 px-lg-4 d-flex align-items-center gap-4"
+                >
+                  <div class="feature_img flex-shrink-0">
+                    <img
+                      src="assets/img/feature_img_2.svg"
+                      alt="Feature Icon"
+                    />
+                  </div>
+                  <div class="feature_content">
+                    <h5 class="feature_title mb-md-3 mb-2 fw-semibold">
+                      30 Days Return policy
+                    </h5>
+                    <p class="feature_desc m-0 ff-figtree">
+                      Hassle-free refunds for any issues with the orders
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="feature_warpper h-100 ps-lg-4 d-flex align-items-center gap-4"
+                >
+                  <div class="feature_img flex-shrink-0">
+                    <img
+                      src="assets/img/feature_img_3.svg"
+                      alt="Feature Icon"
+                    />
+                  </div>
+                  <div class="feature_content">
+                    <h5 class="feature_title mb-md-3 mb-2 fw-semibold">24/7 Support</h5>
+                    <p class="feature_desc m-0 ff-figtree">
+                      Our dedicated team is always here to help
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Features -->
+    </main>
+
+    <footer class="footer pt-3 px-4 px-sm-0">
+      <div class="container py-5">
+        <div class="row g-4 g-lg-5">
+          <div class="col-sm-6 col-lg-4 pe-lg-5">
+            <div class="footer_logo_wrapper mb-4">
+              <img src="assets/img/logo_footer.svg" alt="Footer Logo" />
+            </div>
+            <p class="ff-figtree mb-4 pb-2 pe-xl-3">
+              Medmart is an online medical service and medicine wooCommerce
+              Template for your ultimate online store and medical service.
+            </p>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center gap-3 mb-3">
+                <div class="contact_icon">
+                  <img src="assets/img/location.svg" alt="Location Icon" />
+                </div>
+                <p class="ff-figtree fw-medium mb-0">
+                  16 Collins Street West Victoria, London
+                </p>
+              </li>
+              <li class="d-flex align-items-center gap-3 mb-3">
+                <div class="contact_icon">
+                  <img src="assets/img/email.svg" alt="Email Icon" />
+                </div>
+                <a
+                  href="mailto:yourmail@gmail.com"
+                  class="ff-figtree fw-medium mb-0 footer_link"
+                  >yourmail@gmail.com</a
+                >
+              </li>
+              <li class="d-flex align-items-center gap-3 mb-3">
+                <div class="contact_icon">
+                  <img src="assets/img/phone.svg" alt="Phone Icon" />
+                </div>
+                <a
+                  href="tel:+88022 533 655"
+                  class="ff-figtree fw-medium mb-0 footer_link"
+                  >+88022 533 655</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <h5 class="ff-heebo mb-4">Products</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Medicines">Medicines</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Vitamins & Supplements"
+                  >Vitamins & Supplements</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Accessories"
+                  >Accessories</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Medical Equipment"
+                  >Medical Equipment</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="All Products"
+                  >All Products</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Doctor Equipment"
+                  >Doctor Equipment</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Offer Sale"
+                  >Offer Sale</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-2">
+            <h5 class="ff-heebo mb-4">Quick Link</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Support">Support</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Refund Policy"
+                  >Refund Policy</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Shipping & Returns"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Tearms & Condition"
+                  >Tearms & Condition</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer_link" title="Help Center"
+                  >Help Center</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <h5 class="ff-heebo mb-4">Payments</h5>
+
+            <p class="mb-3">Secure Payments</p>
+
+            <ul class="list-unstyled d-flex align-items-center gap-2 mb-4">
+              <li>
+                <img src="assets/img/visa.png" alt="Payment Option" />
+              </li>
+              <li>
+                <img src="assets/img/mastercard.png" alt="Payment Option" />
+              </li>
+              <li>
+                <img src="assets/img/payment1.png" alt="Payment Option" />
+              </li>
+              <li>
+                <img src="assets/img/payment2.png" alt="Payment Option" />
+              </li>
+              <li>
+                <img src="assets/img/paypal.png" alt="Payment Option" />
+              </li>
+            </ul>
+
+            <ul class="list-unstyled d-flex align-items-center gap-3">
+              <li>
+                <a href="#" class="social_link" title="Support">
+                  <img src="assets/img/facebook.svg" alt="Facebook Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social_link" title="Support">
+                  <img src="assets/img/twitter.svg" alt="Twitter Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social_link" title="Support">
+                  <img src="assets/img/instagram.svg" alt="Instagram Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social_link" title="Support">
+                  <img src="assets/img/pintrest.svg" alt="Pintrest Icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-primary py-2">
+        <div class="container">
+          <p class="ff-figtree m-0 text-center small">
+            &copy;Copyright 2025 Medmart. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
