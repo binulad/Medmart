@@ -9505,12 +9505,12 @@ body {
   }
 }
 
-.ad_wrapper {
+.advertize_wrapper {
   height: 100%;
   background-color: #f3f5f5;
 }
 @media (max-width: 575.98px) {
-  .ad_wrapper {
+  .advertize_wrapper {
     height: 300px;
     max-width: 300px;
     margin: auto;
@@ -9534,7 +9534,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.stethoscopes_ad .ad_content {
+.stethoscopes_ad .advertize_content {
   display: flex;
   flex-direction: column;
   max-width: 50%;
@@ -9543,7 +9543,7 @@ body {
   padding-bottom: 8%;
 }
 @media (max-width: 575.98px) {
-  .stethoscopes_ad .ad_content {
+  .stethoscopes_ad .advertize_content {
     justify-content: end;
     margin-top: auto;
     height: 100%;
@@ -9579,7 +9579,7 @@ body {
   justify-content: end;
   z-index: 1;
 }
-.thermometer_ad .ad_content {
+.thermometer_ad .advertize_content {
   display: flex;
   flex-direction: column;
   margin-right: 5%;
@@ -9603,7 +9603,7 @@ body {
 .medicalSupplies_ad {
   position: relative;
 }
-.medicalSupplies_ad .ad_content {
+.medicalSupplies_ad .advertize_content {
   display: flex;
   flex-direction: column;
   position: absolute;
