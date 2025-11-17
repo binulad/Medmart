@@ -25,14 +25,15 @@
     <!-- Include Style -->
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column overflow-hidden h-100">
     <!-- Header -->
-    <header>
+    <header class="flex-shrink-0">
       <nav
-        class="navbar navbar-expand-lg bg-body-white border-bottom fixed-top py-3"
+      id="navbar-main"
+        class="navbar navbar-expand-lg bg-white border-bottom py-3"
       >
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <img src="assets/img/logo.svg" alt="Medmart Logo" />
           </a>
           <button
@@ -64,12 +65,12 @@
                 class="navbar-nav justify-content-center flex-grow-1 mb-lg-0 mb-4 pe-3 gap-4"
               >
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="#home"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -81,23 +82,23 @@
                     Collections
                   </a>
                   <ul class="dropdown-menu rounded-0">
-                    <li><a class="dropdown-item border-bottom" href="#">Medications</a></li>
+                    <li><a class="dropdown-item border-bottom" href="#medications">Medications</a></li>
                     <li>
-                      <a class="dropdown-item border-bottom" href="#">Stethoscopes</a>
+                      <a class="dropdown-item border-bottom" href="#stethoscopes">Stethoscopes</a>
                     </li>
                     <li>
-                      <a class="dropdown-item border-bottom" href="#">Thermometers</a>
+                      <a class="dropdown-item border-bottom" href="#thermometers">Thermometers</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Medical Supplies</a>
+                      <a class="dropdown-item" href="#medicalSupplies">Medical Supplies</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="#shop">Shop</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
               <ul class="d-flex gap-4 align-items-center list-unstyled m-0">
@@ -124,9 +125,9 @@
       </nav>
     </header>
 
-    <main>
+    <main class="flex-grow-1 overflow-auto h-100" data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -40%" tabindex="0">
       <!-- Hero Section -->
-      <section class="hero-bg">
+      <section class="hero-bg" id="home">
         <div class="container">
           <div class="d-flex align-items-center text-center flex-column">
             <p class="m-0 text-uppercase">Since 2014</p>
@@ -174,7 +175,7 @@
       <!-- End: Hero Section -->
 
       <!-- Services -->
-      <section class="services">
+      <section class="services" id="about">
         <div class="container-fluid p-0">
           <div class="d-flex flex-column flex-sm-row services_wrapper">
             <div class="py-lg-5 py-4 pe-lg-5 services_item padding_start">
@@ -231,7 +232,7 @@
           <div class="px-3">
             <div class="row g-lg-4 g-3">
               <div class="col-sm-4">
-                <div class="ad_wrapper">
+                <div class="ad_wrapper" id="medications">
                   <div id="carousel" class="carousel slide h-100">
                     <div class="carousel-indicators me-lg-4 me-3">
                       <button
@@ -320,7 +321,7 @@
               <div class="col-sm-8">
                 <div class="row g-lg-4 g-3">
                   <div class="col-12">
-                    <div class="ad_wrapper stethoscopes_ad">
+                    <div class="ad_wrapper stethoscopes_ad" id="stethoscopes">
                       <div class="ad_content">
                         <h5 class="text-primary fw-semibold mb-1 fs-4">
                           Save 30% On
@@ -331,7 +332,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="ad_wrapper thermometer_ad">
+                    <div class="ad_wrapper thermometer_ad" id="thermometers">
                       <div class="ad_content">
                         <p class="fs-4">Get Digital<br />Thermometers</p>
                         <a href="#" class="primary_link">visit store</a>
@@ -339,7 +340,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="ad_wrapper medicalSupplies_ad">
+                    <div class="ad_wrapper medicalSupplies_ad" id="medicalSupplies">
                       <img
                         src="assets/img/medicalSupplies.png"
                         class="w-100 h-100"
@@ -362,7 +363,7 @@
       <!-- End: Advertize -->
 
       <!-- Products -->
-      <section class="py-5">
+      <section class="py-5" id="shop">
         <div class="container">
           <div class="px-3">
             <header class="text-center">
@@ -1090,179 +1091,179 @@
         </div>
       </section>
       <!-- End: Features -->
+
+      <footer class="footer pt-3 px-4 px-sm-0" id="contact">
+        <div class="container py-5">
+          <div class="row g-4 g-lg-5">
+            <div class="col-sm-6 col-lg-4 pe-lg-5">
+              <div class="footer_logo_wrapper mb-4">
+                <img src="assets/img/logo_footer.svg" alt="Footer Logo" />
+              </div>
+              <p class="ff-figtree mb-4 pb-2 pe-xl-3">
+                Medmart is an online medical service and medicine wooCommerce
+                Template for your ultimate online store and medical service.
+              </p>
+              <ul class="list-unstyled">
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <div class="contact_icon">
+                    <img src="assets/img/location.svg" alt="Location Icon" />
+                  </div>
+                  <p class="ff-figtree fw-medium mb-0">
+                    16 Collins Street West Victoria, London
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <div class="contact_icon">
+                    <img src="assets/img/email.svg" alt="Email Icon" />
+                  </div>
+                  <a
+                    href="mailto:yourmail@gmail.com"
+                    class="ff-figtree fw-medium mb-0 footer_link"
+                    >yourmail@gmail.com</a
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <div class="contact_icon">
+                    <img src="assets/img/phone.svg" alt="Phone Icon" />
+                  </div>
+                  <a
+                    href="tel:+88022 533 655"
+                    class="ff-figtree fw-medium mb-0 footer_link"
+                    >+88022 533 655</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-sm-6 col-lg-3">
+              <h5 class="ff-heebo mb-4">Products</h5>
+  
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Medicines">Medicines</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Vitamins & Supplements"
+                    >Vitamins & Supplements</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Accessories"
+                    >Accessories</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Medical Equipment"
+                    >Medical Equipment</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="All Products"
+                    >All Products</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Doctor Equipment"
+                    >Doctor Equipment</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Offer Sale"
+                    >Offer Sale</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-sm-6 col-lg-2">
+              <h5 class="ff-heebo mb-4">Quick Link</h5>
+  
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Support">Support</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Refund Policy"
+                    >Refund Policy</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Shipping & Returns"
+                    >Shipping & Returns</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Tearms & Condition"
+                    >Tearms & Condition</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="footer_link" title="Help Center"
+                    >Help Center</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-sm-6 col-lg-3">
+              <h5 class="ff-heebo mb-4">Payments</h5>
+  
+              <p class="mb-3">Secure Payments</p>
+  
+              <ul class="list-unstyled d-flex align-items-center gap-2 mb-4">
+                <li>
+                  <img src="assets/img/visa.png" alt="Payment Option" />
+                </li>
+                <li>
+                  <img src="assets/img/mastercard.png" alt="Payment Option" />
+                </li>
+                <li>
+                  <img src="assets/img/payment1.png" alt="Payment Option" />
+                </li>
+                <li>
+                  <img src="assets/img/payment2.png" alt="Payment Option" />
+                </li>
+                <li>
+                  <img src="assets/img/paypal.png" alt="Payment Option" />
+                </li>
+              </ul>
+  
+              <ul class="list-unstyled d-flex align-items-center gap-3">
+                <li>
+                  <a href="#" class="social_link" title="Support">
+                    <img src="assets/img/facebook.svg" alt="Facebook Icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social_link" title="Support">
+                    <img src="assets/img/twitter.svg" alt="Twitter Icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social_link" title="Support">
+                    <img src="assets/img/instagram.svg" alt="Instagram Icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social_link" title="Support">
+                    <img src="assets/img/pintrest.svg" alt="Pintrest Icon" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-primary py-2">
+          <div class="container">
+            <p class="ff-figtree m-0 text-center small">
+              &copy;Copyright 2025 Medmart. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
 
-    <footer class="footer pt-3 px-4 px-sm-0">
-      <div class="container py-5">
-        <div class="row g-4 g-lg-5">
-          <div class="col-sm-6 col-lg-4 pe-lg-5">
-            <div class="footer_logo_wrapper mb-4">
-              <img src="assets/img/logo_footer.svg" alt="Footer Logo" />
-            </div>
-            <p class="ff-figtree mb-4 pb-2 pe-xl-3">
-              Medmart is an online medical service and medicine wooCommerce
-              Template for your ultimate online store and medical service.
-            </p>
-            <ul class="list-unstyled">
-              <li class="d-flex align-items-center gap-3 mb-3">
-                <div class="contact_icon">
-                  <img src="assets/img/location.svg" alt="Location Icon" />
-                </div>
-                <p class="ff-figtree fw-medium mb-0">
-                  16 Collins Street West Victoria, London
-                </p>
-              </li>
-              <li class="d-flex align-items-center gap-3 mb-3">
-                <div class="contact_icon">
-                  <img src="assets/img/email.svg" alt="Email Icon" />
-                </div>
-                <a
-                  href="mailto:yourmail@gmail.com"
-                  class="ff-figtree fw-medium mb-0 footer_link"
-                  >yourmail@gmail.com</a
-                >
-              </li>
-              <li class="d-flex align-items-center gap-3 mb-3">
-                <div class="contact_icon">
-                  <img src="assets/img/phone.svg" alt="Phone Icon" />
-                </div>
-                <a
-                  href="tel:+88022 533 655"
-                  class="ff-figtree fw-medium mb-0 footer_link"
-                  >+88022 533 655</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-sm-6 col-lg-3">
-            <h5 class="ff-heebo mb-4">Products</h5>
-
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Medicines">Medicines</a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Vitamins & Supplements"
-                  >Vitamins & Supplements</a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Accessories"
-                  >Accessories</a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Medical Equipment"
-                  >Medical Equipment</a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="All Products"
-                  >All Products</a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Doctor Equipment"
-                  >Doctor Equipment</a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Offer Sale"
-                  >Offer Sale</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-sm-6 col-lg-2">
-            <h5 class="ff-heebo mb-4">Quick Link</h5>
-
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Support">Support</a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Refund Policy"
-                  >Refund Policy</a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Shipping & Returns"
-                  >Shipping & Returns</a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Tearms & Condition"
-                  >Tearms & Condition</a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="#" class="footer_link" title="Help Center"
-                  >Help Center</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-sm-6 col-lg-3">
-            <h5 class="ff-heebo mb-4">Payments</h5>
-
-            <p class="mb-3">Secure Payments</p>
-
-            <ul class="list-unstyled d-flex align-items-center gap-2 mb-4">
-              <li>
-                <img src="assets/img/visa.png" alt="Payment Option" />
-              </li>
-              <li>
-                <img src="assets/img/mastercard.png" alt="Payment Option" />
-              </li>
-              <li>
-                <img src="assets/img/payment1.png" alt="Payment Option" />
-              </li>
-              <li>
-                <img src="assets/img/payment2.png" alt="Payment Option" />
-              </li>
-              <li>
-                <img src="assets/img/paypal.png" alt="Payment Option" />
-              </li>
-            </ul>
-
-            <ul class="list-unstyled d-flex align-items-center gap-3">
-              <li>
-                <a href="#" class="social_link" title="Support">
-                  <img src="assets/img/facebook.svg" alt="Facebook Icon" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="social_link" title="Support">
-                  <img src="assets/img/twitter.svg" alt="Twitter Icon" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="social_link" title="Support">
-                  <img src="assets/img/instagram.svg" alt="Instagram Icon" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="social_link" title="Support">
-                  <img src="assets/img/pintrest.svg" alt="Pintrest Icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary py-2">
-        <div class="container">
-          <p class="ff-figtree m-0 text-center small">
-            &copy;Copyright 2025 Medmart. All Rights Reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

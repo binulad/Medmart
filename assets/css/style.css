@@ -9167,6 +9167,7 @@ img {
 
 html,
 body {
+  height: 100%;
   font-size: 0.9rem;
 }
 @media (min-width: 768px) {
@@ -9333,7 +9334,7 @@ body {
 }
 @media (min-width: 992px) {
   .hero-bg {
-    padding: 6rem 0;
+    padding: 5rem 0;
   }
 }
 .hero-bg-content {
